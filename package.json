@@ -1,0 +1,35 @@
+{
+    "name": "website",
+    "version": "0.0.1",
+    "private": true,
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "NODE_ENV=test mocha --recursive test",
+        "test:coverage": "nyc npm test",
+        "test:unit": "mocha --recursive test/middleware test/models test/routes",
+        "test:integration": "mocha --recursive test/integration"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "bootstrap": "^4.0.0",
+        "connect": "^3.6.6",
+        "errorhandler": "^1.5.0",
+        "express": "^4.16.2",
+        "express-session": "^1.15.6",
+        "gulp-util": "^3.0.8",
+        "http": "0.0.0",
+        "jQuery": "^1.7.4",
+        "jquery": "^3.3.1",
+        "npm-watch": "^0.3.0",
+        "popper": "^1.0.1",
+        "websocket": "^1.0.25"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-connect": "^5.5.0",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "^3.0.0"
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/login.css">
+        <script src="assets/main.js"></script>
+    </head>
+    <nav>
+        <!-- Navigation-->
+        <div class="topnav" id="myTopnav">
+            <a href="/" class="active">Home</a>
+            <a href="/info">Information</a>
+            <a href="/project">Projects</a>
+            <a href="/contact">Contact Me</a>
+            <a href="/portal">Portal</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+    <body>
+        <div id="contain">
+            <div id="loginportal">
+                <h1>Login</h1>
+                <p><span class="error">* required field.</span></p>
+                <div name="username">
+                    <form action="get">
+                        <label for="user">Username:</label>
+                        <span class="error">* </span><br>
+                        <input type="text"id="user" placeholder ="Username" required><br>
+                        <label for="pass">Password:</label> 
+                        <span class="error">* </span><br>
+                        <input type="password"id="pass"placeholder = "Password" required><br>
+                        <label for"logged">Remember me</label>
+                        <input type="checkbox" id="logged"><br>
+                        <input type="submit" value="Submit">
+                        <input type="button" value="Create Account" onclick="window.location.href='create.html'" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

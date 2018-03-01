@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <title>Contact Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/contact.css">
+        <script src="assets/main.js"></script>
+    </head>
+    <nav>
+         <!-- Navigation -->
+        <div class="topnav" id="myTopnav">
+            <a href="/" class="active">Home</a>
+            <a href="/info">Information</a>
+            <a href="/project">Projects</a>
+            <a href="/contact">Contact Me</a>
+            <a href="/portal">Portal</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+    <body>
+        <h1>Contact Me</h1>
+        <div id="contain">
+             <!-- Contact Form Input -->
+            <div id="leftdiv">
+                <p><span class="error">* required field.</span></p>
+                <div name="contactform">
+                    <form action="POST">
+                        <label for="name">Name:</label>
+                        <span class="error">* </span><br>
+                        <input type="text"id="name" placeholder ="Name" required><br>
+                        <label for="number">Phone Number:</label> 
+                        <span class="error">* </span><br>
+                        <input type="text"id="number"placeholder = "Phone Number" required><br>
+                        <label for="email">Email:</label>
+                        <span class="error">* </span><br>
+                        <input type="email"id = "email" type = "email" placeholder = "Email" required><br>
+                        <label for="message">Message:</label>
+                        <span class="error">* </span><br>
+                        <input type="text"id= "message" height="150" required><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <!-- Contact Information -->
+            <div id="rightdiv">
+                <div name="contactinfo">
+                    <h2>Contact Information</h2>
+                    <label>Phone Number:</label>
+                    <a href="tel:+19083093749">908-309-3749</a><br>
+                    <label>Email:</label>
+                    <a href="mailto:jmalley31@gmail.com">Email Me</a><br><br>
+                    <a href="https://www.linkedin.com/in/john-o-malley-582b3593/">
+                        <img border="0" alt="W3Schools" src="public/img/linkedin.png" width="50" height="50">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
