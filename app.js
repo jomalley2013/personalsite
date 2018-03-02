@@ -9,7 +9,7 @@ const errorHandler = require('errorhandler');
 const app = express();
 require(path.join(__dirname + '/routes.js'))(app);
 
-app.set('port', process.env.PORT || 9601);
+app.set('port', process.env.PORT || 9600);
 app.use(express.static(__dirname + '/public'));
 console.log(__dirname + '/public');
 
